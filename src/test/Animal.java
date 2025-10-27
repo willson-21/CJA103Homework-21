@@ -4,7 +4,11 @@ public class Animal {
 	private int age;
 	private float weight;
 	
-
+	// 把無參數建構子再宣告出來(保留著)
+	//1. 留著給子類別建構子的呼叫應對
+	//2. 無參數建構子也是 "Java Bean" 的規範要點之一
+	//3. 給搭配的框架使用(框架會呼叫此建構子幫我們產生物件)
+	
 	public  Animal(int age, float weight) {
 		this.age = age;
 		this.weight =weight;
@@ -40,6 +44,7 @@ public class Animal {
 	public void setWeight(float weight) {
 		this.weight=weight;
 	}
+	
 
 }
 

@@ -156,7 +156,7 @@ public class H3 {
 //	        while (count < 6) {
 //	            int num =(int) (Math.random()*49)+1; // 產生1~49的亂數
 //
-//	            // 用數學方式判斷是否含有排除數字
+//	            
 //	            if (num % 10 == exclude || num / 10 == exclude) {
 //	                continue; // 含有排除數字 → 跳過
 //	            }
@@ -176,7 +176,7 @@ public class H3 {
 //	            }
 //	        }
 //
-//	        // 排序讓結果美觀
+//	        // 排序
 //	        Arrays.sort(lotto);
 //
 //	        // 顯示結果
