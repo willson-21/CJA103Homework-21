@@ -10,14 +10,13 @@ public class getAuth {
 		
 	}
 	public  static void genAuthCode() {
-		String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-		Random random = new Random();
-		String result = "";
-
-		for (int i = 0; i < 8; i++) {
-		    int index = random.nextInt(chars.length());
-		    result += chars.charAt(index); // 取出「字元」加到字串
+		String chs ="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890#@!%";
+		Random rad = new Random();
+		String result ="";
+		for(int i=0;i<8;i++) {
+			int dex = rad.nextInt(chs.length());
+			result+=chs.charAt(dex);
 		}
-		System.out.println("隨機亂數產生:"+result);
+		System.out.println("隨機碼產生:"+result);
 	}
 }
